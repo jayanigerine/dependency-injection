@@ -1,0 +1,15 @@
+/target/
+.DS_Store
+.classpath
+.project
+.npmrc
+.settings/
+/src/main/java/META-INF/
+/bin/
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr
+*.patch
