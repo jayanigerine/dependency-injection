@@ -1,0 +1,13 @@
+@startuml
+participant Injector as injector
+participant WoodenDoor as woodenDoor
+participant GlassDoor as glassDoor
+participant HouseImpl as houseImpl
+participant House as house
+
+
+injector -> glassDoor : new
+injector -> houseImpl : new
+injector -> house : inject (glassDoor, houseImpl)
+
+@enduml

@@ -8,12 +8,13 @@ public class HouseImpl implements House {
         this.door = door;
     }
 
-    public void doSomething() {
+    public void constructHouse() {
+        System.out.println("*** Constructing House ***");
         String info = door.getInfo();
         System.out.println(info);
     }
 
-    public void setService(Door door) {
+    public void setDoor(Door door) {
         this.door = door;
     }
 }
