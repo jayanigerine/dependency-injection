@@ -9,7 +9,7 @@ public class SpringDependencyExample {
 
         ApplicationContext appContext = new ClassPathXmlApplicationContext("classpath:applicationContextWoodenDoor.xml");
 
-        House house = (House) appContext.getBean("wooden");
-        house.constructHouse();
+        House myHouse = (House) appContext.getBean("houseDef");
+        myHouse.describeHouse();
     }
 }
