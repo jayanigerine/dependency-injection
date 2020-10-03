@@ -5,8 +5,12 @@
                 http://www.springframework.org/schema/beans
                 http://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <bean id="wooden" class="ufm.cis.jayani.di.WoodenDoor"/>
-    <bean id="glass" class="ufm.cis.jayani.di.GlassDoor"/>
+    <bean id="wooden" class="ufm.cis.jayani.di.WoodenDoor">
+        <property name="cost" value="200"/>
+    </bean>
+    <bean id="glass" class="ufm.cis.jayani.di.GlassDoor">
+        <property name="cost" value="500"/>
+    </bean>
 
     <bean id="houseDef" class="ufm.cis.jayani.di.HouseImpl">
         <constructor-arg ref="glass"/>

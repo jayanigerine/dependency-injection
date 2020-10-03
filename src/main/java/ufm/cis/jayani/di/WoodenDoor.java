@@ -1,8 +1,19 @@
 package ufm.cis.jayani.di;
 
 public class WoodenDoor implements Door {
-    public String getInfo() {
+    private int cost;
 
-        return "Door type : Wooden\nCost : 200$";
+    public int getCost() {
+
+        return cost;
+    }
+
+    public void setCost(int cost) {
+
+        this.cost = cost;
+    }
+
+    public String getInfo() {
+        return "Door type : Wooden\nCost : " +this.getCost();
     }
 }
